@@ -1,0 +1,56 @@
+<!--
+    For HTML preview:
+    https://htmlpreview.github.io/?https://github.com/alysonnyang/kokoa-clone/blob/main/challenge/challenge_2.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 2 - Alyson</title>
+    <style>
+        :root {
+            --bordersize: 4px;
+        }
+        body {
+            margin: 0px;
+            height: 100vh;
+            background-color: tomato;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #outerbox {
+            height: 300px;
+            width: 300px;
+            background-color: wheat;
+            border: var(--bordersize) solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #outerbox > div {
+            height: 50px;
+            border: var(--bordersize) solid white;
+            background-color: teal;
+        }
+        #outerbox :nth-child(odd) {
+            width: 50px;
+        }
+        #outerbox :nth-child(even) {
+            width: 250px;
+            border: var(--bordersize) dashed white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="outerbox">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>
