@@ -1,0 +1,125 @@
+<!--
+For HTML preview:
+https://htmlpreview.github.io/?https://github.com/alysonnyang/kokoa-clone/blob/main/challenge/challenge_3.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 3 - Alyson</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            margin: 0px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            line-height:1.5;
+        }
+        main {
+            margin: 0px;
+            height: 77vh;
+            width: 365px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:space-between;
+        
+        <!--블럭확인용 
+            border: 4px solid blue;
+        -->
+        }
+        #line1,#line2 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        
+        <!--블럭확인용 
+            border: 2px dashed red;
+        -->
+        }    
+        .colorbox {
+            margin: 0px;
+            height: 270px;
+            width: 160px;
+            border: 8px solid white;
+        }
+        .colorlabel {
+            margin: 0px;
+            padding-left: 4%;
+            display: block;
+            height:25%;
+            position: relative;
+            top: 10%;
+            background-color: white;
+            text-align: left;
+            
+        <!--블럭확인용                
+            border: 1px solid green;
+        -->
+        }
+        .colorname {
+            display: block;
+            height: 40px;
+            line-height: 2.5;
+            font-size: 13pt;
+            font-weight: bold;
+        }
+        .colorcode {
+            font-weight: bold;
+            font-size: 10pt;
+        }
+
+        #tomato {
+            background-color: tomato;
+        }
+        #teal {
+            background-color: teal;
+        }
+        #burlywood {
+            background-color: burlywood;
+        }
+        #thistle {
+            background-color: thistle;
+        }
+
+    </style>
+</head>
+<body>
+    <header><h1>The Best Colors</h1></header>
+    <main>
+        <div id="line1">
+            <div class="colorbox" id="tomato">
+                <div class="colorlabel">
+                    <span class="colorname">Tomato</span>
+                    <span class="colorcode">#FF6347</span>
+                </div>
+            </div>
+            <div class="colorbox" id="teal">
+                <div class="colorlabel">
+                    <span class="colorname">Teal</span>
+                    <span class="colorcode">#008080</span>
+                </div>
+            </div>
+        </div>
+        <div id="line2">
+            <div class="colorbox" id="burlywood">
+                <div class="colorlabel">
+                    <span class="colorname">Burlywood</span>
+                    <span class="colorcode">#DEB887</span>
+                </div>
+            </div>
+            <div class="colorbox" id="thistle">
+                <div class="colorlabel">
+                    <span class="colorname">Thistle</span>
+                    <span class="colorcode">#D7BfD7</span>                        
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
