@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 5 - Alyson</title>
+    <script src="https://kit.fontawesome.com/e6c97e9e3a.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --maincolor:#18191e;
+        }
+        body {
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            margin: 0;
+            width:300px;
+            height: 660px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+            border: 4px solid #00ceb3;
+        }
+        body > * {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: var(--maincolor)
+        }
+        header {
+            padding: 40px 10px 10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        .fa-xmark {
+            position: absolute;
+            left:22px;
+        }
+
+        .current {
+            padding: 0px 20px;
+            height: 135px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .current__colorbox {
+            width: 90px;
+            height: 90px;
+            border-radius: 10%;
+            background-color:#febb00 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid var(--maincolor);
+            
+        }
+        .current__text {
+            width: 60%;
+            height:100px;
+        }
+        .current__text .title {
+            font-size: 30px;
+        }
+        .functions {
+            height: 80px;   
+            padding: 0px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                  
+        }
+        .functions > * {
+            height: 45px;
+            width: 45px;
+            border: 2px solid var(--maincolor);
+            border-radius: 50%;
+            box-shadow:0px 2px var(--maincolor);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .functions .play{
+            width: 125px;
+            border-radius: 10%/25%;
+        }
+
+        .play:first-child span{
+            margin-left: 10px;
+        }
+
+        .playlist {
+            padding:0;
+            height: 340px;
+        }
+        .playlist > * {
+            padding: 20px;
+            height: 25%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+        .colorbox {
+            width: 40px;
+            height: 40px;
+            border-radius: 25%;
+            border: 2px solid var(--maincolor);
+        }
+        .playlist__item:nth-child(1) .colorbox{background-color: #ff4901;}
+        .playlist__item:nth-child(2) .colorbox{background-color: #ff81bd;}
+        .playlist__item:nth-child(3) .colorbox{background-color: #0048ee;}
+        .playlist__item:nth-child(4) .colorbox{background-color: #00caac;}
+
+        .textbox {
+            margin-left: 10px;
+        }
+
+        .title {font-size: 20px;}
+        .singer {font-size: 12px;}
+    </style>
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-xmark fa-lg"></i>
+        <span class="header__title"><strong>Playlist</strong></span>
+        
+    </header>
+    <div class="current">
+        <div class="current__colorbox">
+            <i class="fa-regular fa-image fa-2x" style='color:white;'></i>
+        </div>
+        <div class="current__text">
+            <span class="title"><strong>Random Love</strong></span>
+            <br>
+            <span class="singer">by Divay Kapoor</span>
+        </div>
+    </div>
+    <div class="functions">
+        <div class="play">
+            <i class="fa-solid fa-play"></i>
+            <span>Play</span>
+        </div>
+        <div><i class="fa-solid fa-heart"></i></div>
+        <div><i class="fa-solid fa-plus"></i></div>
+    </div>
+    <div class="playlist">
+        <div class="playlist__item">
+            <div class="colorbox"></div>
+            <div class="textbox">
+                <span class="title"><strong>Matargais</strong></span><br>
+                <span class="singer">Mohit Chauhan</span>
+            </div>
+        </div>
+        <div class="playlist__item">
+            <div class="colorbox"></div>
+            <div class="textbox">
+                <span class="title"><strong>Attitude</strong></span><br>
+                <span class="singer">Lewis OfMan · Attitude</span>
+            </div>
+        </div>
+        <div class="playlist__item">
+            <div class="colorbox"></div>
+            <div class="textbox">
+                <span class="title"><strong>Try Everthing</strong></span><br>
+                <span class="singer">Shakira · Zootopia</span>
+            </div>
+        </div>
+        <div class="playlist__item">
+            <div class="colorbox"></div>
+            <div class="textbox">
+                <span class="title"><strong>Sunflower</strong></span><br>
+                <span class="singer">Joseph Vincent · Sunflower</span>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
